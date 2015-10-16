@@ -8,19 +8,23 @@
 
 .navbar-brand {
   font-weight: 500;
+  font-size: 2em;
+}
+
+.navbar-default .navbar-brand {
+    color: #008bbf;
 }
 
 #questions-panel-head, #answers-panel-head {
-
-  background-color: #FF7070;
+  background-color: #aae8ff;
 }
 
 #question-list {
-    background-color: #FF9696;
+    background-color: #aae8ff;
 }
 
 #question-list input, #question-list textarea, .show-btn, .list-group-item {
-  background-color: #F4F4F4;
+  background-color: #fff;
 }
 
 pre {
