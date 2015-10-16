@@ -1,0 +1,33 @@
+.container {
+  padding-top: 70px;
+}
+
+.navbar{
+  background-color: #D1D1D1;
+}
+
+.navbar-brand {
+  font-weight: 500;
+}
+
+#questions-panel-head, #answers-panel-head {
+
+  background-color: #FF7070;
+}
+
+#question-list {
+    background-color: #FF9696;
+}
+
+#question-list input, #question-list textarea, .show-btn, .list-group-item {
+  background-color: #F4F4F4;
+}
+
+pre {
+  border-width: 0px;
+  font-family: monospace;
+}
+
+/*#question-list textarea {
+    background-color: #DBD2CB;
+}*/
