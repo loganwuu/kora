@@ -5,7 +5,7 @@
 #### By Logan Wu
 
 ## Description
-An app that allows users to post questions for the world to view, and get a chance for experts(or internet trolls) to reply and give them helpful information. Answered questions can be filtered out from unanswered ones and answers can be upvoted and downvoted. Order of the answers is also arranged according to their number of votes. Users can delete individual answers based on the votes. Comments can also be inputted to each submitted answer and search function is added to for existing questions.
+An app that allows users to post questions for experts to answer. Answered questions can be filtered out from unanswered ones and answers can also be upvoted or downvoted. Order of the answers is arranged according to their number of votes (from high to low). Users are allowed to delete individual answers. Comments can also be added to individual answer.
 
 ## Setup
 
