@@ -1,6 +1,6 @@
 # Kora
 
-##### A web app that allows users to post questions and get replies from experts. [Click to view live](http://loganwuu.github.io/kora/) (10/15/15)
+##### A web app that allows users to post questions and get replies from experts. [Click to view live.](http://loganwuu.github.io/kora/) (10/15/15)
 
 #### By Logan Wu
 
