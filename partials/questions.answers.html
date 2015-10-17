@@ -1,0 +1,79 @@
+<div>
+	<div class="panel panel-default" id="question-list">
+		<div class="panel-heading" id="answers-panel-head">
+			<h2>{{ question.synopsis }}</h2>
+			<h4>{{ question.description }}</h4>
+		</div>
+		<div class="panel-body" >
+			<div class="list-group" ng-show="question.answers.length">
+				<div class="list-group-item" ng-repeat="item in question.answers | orderBy: '-rating'">
+					<span class="glyphicon glyphicon-chevron-up" aria-hidden="true" ng-click="rate(item, 1)"></span>{{item.rating}}
+					<span class="glyphicon glyphicon-chevron-down" aria-hidden="true" ng-click="rate(item, -1)"></span>
+					<pre class="list-group-item-heading">{{ item.answerText }}</pre>
+					<div id="answer-body">
+						<p class="list-group-item-text"><strong>Answered By</strong>: {{ item.userName }}</p>
+						<p class="list-group-item-text"><strong>Approved</strong>:
+							<span class="glyphicon glyphicon-star" aria-hidden="true" ng-show="item.approved" ng-click="approveAnswer(item, false)"></span>
+							<span class="glyphicon glyphicon-star-empty" aria-hidden="true" ng-show="!item.approved" ng-click="approveAnswer(item, true)"></span>
+						</p>
+						<div class="row form-group">
+							<div class="col-md-12">
+								<button ng-click="showCommentForm = true" class="btn btn-xs">Add Comment</button>
+							</div>
+						</div>
+						<div id="addComment" ng-show="showCommentForm">
+							<!--<h5>Add a comment:</h5>-->
+							<form ng-submit="addComment(item, commentText); showCommentForm = false; commentText= null;" class="form" role="form">
+								<div class="row form-group">
+									<div class="col-md-12">
+										<textarea rows="2" ng-model="commentText" placeholder="enter comment" class="form-control" required></textarea>
+									</div>
+
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<button type="submit" class="btn">Add</button>
+									</div>
+								</div>
+
+							</form>
+						</div>
+						<div ng-show="item.comments.length">
+							<h4>Comments:</h4>
+							<div class="list-group">
+								<div class="list-group-item"  ng-repeat="comment in item.comments">
+									<!--<p class="list-group-item-text">{{ comment.description }}</p>-->
+									<pre class="list-group-item-text">{{ comment.description }}</pre>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<h2>Add an answer:</h2>
+				<form ng-submit="addAnswer()" class="form" role="form">
+
+					<div class="row form-group">
+						<div class="col-md-3">
+							<input type="text" ng-model="userName" placeholder="your name" class="form-control" required>
+						</div>
+					</div>
+
+					<div class="row form-group">
+						<div class="col-md-12">
+							<textarea rows="5" ng-model="answerText" placeholder="your answer" class="form-control" required></textarea>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<button type="submit" class="btn btn-default">Submit</button>
+						</div>
+					</div>
+
+				</form>
+	    	</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,37 @@
+.container {
+  padding-top: 70px;
+}
+
+.navbar{
+  background-color: #D1D1D1;
+}
+
+.navbar-brand {
+  font-weight: 500;
+  font-size: 2em;
+}
+
+.navbar-default .navbar-brand {
+    color: #008bbf;
+}
+
+#questions-panel-head.panel-heading, #answers-panel-head.panel-heading {
+  background-color: #008bbf;
+}
+
+#question-list {
+    background-color: #ddf6ff;
+}
+
+#question-list input, #question-list textarea, .show-btn, .list-group-item {
+  background-color: #f9f9f9;
+}
+
+pre {
+  border-width: 0px;
+  font-family: monospace;
+}
+
+/*#question-list textarea {
+    background-color: #DBD2CB;
+}*/

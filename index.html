@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="experts">
+	<head>
+		<meta charset="UTF-8">
+		<title>Ask Kora</title>
+		<script src="lib/angular.js"></script>
+		<script src="lib/angular-ui-router.js"></script>
+		<script src="lib/angular-animate.js"></script>
+		<script src="app.js"></script>
+		<script src="services/QuestionsFactory.js"></script>
+		<script src="services/UtilitiesFactory.js"></script>
+		<script src="controllers/QuestionsController.js"></script>
+		<script src="controllers/AnswersController.js"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+        <!-- custom css -->
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/animations.css">
+	</head>
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="/">kora</a>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<div ui-view></div>
+		</div>
+		<script src="js/jquery-1.11.3.js"></script>
+	</body>
+</html>
