@@ -35,10 +35,11 @@ pre {
 
 .footer { 
   text-align: center;
+  padding: 0;
 }
 
 .wrapper {
-  min-height: calc(100vh - 100px);
+  min-height: calc(100vh - 200px);
 }
 
 
