@@ -33,6 +33,15 @@ pre {
   font-family: monospace;
 }
 
+.wrapper {
+  min-height: calc(100vh - 100px);
+}
+
+.footer { 
+	text-align: center;
+	padding: 2em 0;
+}
+
 /*.footer {*/
 /*    position: absolute;*/
 /*    padding-top: 15px;*/
