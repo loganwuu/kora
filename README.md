@@ -1,6 +1,6 @@
 # Kora
 
-##### A web app that allows users to post questions and get replies from experts. [Click to view live.](http://loganwuu.github.io/kora/) (10/15/15)
+##### A web app that allows users to post questions and get replies from experts — [live preview](http://loganwuu.github.io/kora/) (10/15/15)
 
 #### By Logan Wu
 
@@ -8,7 +8,6 @@
 An app that allows users to post questions for experts to answer. Answered questions can be filtered out from unanswered ones and answers can also be upvoted or downvoted. Order of the answers is arranged according to their number of votes (from high to low). Users are allowed to delete individual answers. Comments can also be added to individual answer.
 
 ## Setup
-
 * Clone the project using the link provided on Github in the Terminal by using ```git clone```.
 * If you are on a mac, type in ```python -m SimpleHTTPServer``` in the Terminal from the top level of the project folder.
 * Open browser and type in ```localhost:8000``` to view the site.
